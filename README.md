@@ -48,3 +48,35 @@ A successful DNS resolution will return an HTTP 200. A failure will return a 503
 ##### Full paremeter URL example:
 
 /resolveDns?fqdn=amazon.com&dnstype=A&nameserver=1.1.1.1&timeout=3
+
+#### /memUse
+
+##### Parameters:
+
+- percent (default = 95% usage)
+
+##### Full paremeter URL example:
+
+/memUse?percent=90
+
+#### /diskUse
+
+##### Parameters:
+
+- percent (default = 90% usage)
+- mount (default = /)
+
+##### Full paremeter URL example:
+
+/diskUse?percent=95&mount=/home
+
+#### /loadAvg
+
+##### Parameters:
+
+- load (default = 4)
+- mins (default = 15. Options are 1, 5, 15)
+
+##### Full paremeter URL example:
+
+/loadAvg?load=5&mins=5
