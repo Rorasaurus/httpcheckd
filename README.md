@@ -22,14 +22,14 @@ May work on Windows, but not tested.
 
 Start with:
 
-'''
+```
 python3 httpcheckd
-'''
+```
 
 Once running, system checks can be performed by querying URLs. E.g
 
-'''
+```
 curl 127.0.0.1:8080/resolveDns
-'''
+```
 
 A successful DNS resolution will return an HTTP 200. A failure will return a 503.
